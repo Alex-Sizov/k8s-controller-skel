@@ -1,0 +1,8 @@
+---
+apiVersion: mygroup.example.com/v1alpha1
+kind: MyResource
+metadata:
+  name: myres1
+spec:
+  image: nginx
+  memory: 50Mi
