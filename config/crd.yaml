@@ -37,3 +37,13 @@ spec:
             properties:
               state:
                 type: string
+    additionalPrinterColumns:
+      - name: image
+        jsonPath: .spec.image
+        type: string
+      - name: memory
+        jsonPath: .spec.memory
+        type: string
+      - name: age
+        jsonPath: .metadata.creationTimestamp
+        type: date
